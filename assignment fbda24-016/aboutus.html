@@ -6,7 +6,6 @@
   <title>About Us - Vans Clothing Store</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="script.js">
 </head>
 <body>
   <!-- Header -->
@@ -53,37 +52,6 @@
     © 2025 Vans Clothing Store. All rights reserved.
   </footer>
 
-  <script>
-    function toggleMenu() {
-      const navMenu = document.querySelector('.nav-menu');
-      const navToggle = document.getElementById('nav-toggle');
-      navMenu.classList.toggle('active');
-      navToggle.checked = !navToggle.checked;
-    }
-
-    function closeMenu() {
-      const navMenu = document.querySelector('.nav-menu');
-      const navToggle = document.getElementById('nav-toggle');
-      navMenu.classList.remove('active');
-      navToggle.checked = false;
-    }
-
-    // Accessibility: Allow Enter key to toggle menu
-    document.querySelector('.hamburger').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleMenu();
-      }
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      const navMenu = document.querySelector('.nav-menu');
-      const hamburger = document.querySelector('.hamburger');
-      if (!navMenu.contains(e.target) && !hamburger.contains(e.target) && navMenu.classList.contains('active')) {
-        closeMenu();
-      }
-    });
-  </script>
+  <script scr="script.js"> </script>
 </body>
 </html>
